@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { FileUpload } from "@/components/ui/file-upload";
 import { 
   Upload, 
   FileText, 
@@ -60,15 +61,10 @@ const todaysFocus = [
 ];
 
 export default function DashboardPage() {
-  const [isUploading, setIsUploading] = useState(false);
-
-  const handleFileUpload = () => {
-    setIsUploading(true);
-    // Mock upload process
-    setTimeout(() => {
-      setIsUploading(false);
-      console.log("File upload completed");
-    }, 2000);
+  const handleFileUpload = (files: File[]) => {
+    console.log("Files uploaded:", files);
+    // Here you would typically send files to your backend
+    // For now, we'll just log them
   };
 
   return (
@@ -118,37 +114,18 @@ export default function DashboardPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Upload Widget */}
         <div className="lg:col-span-2 space-y-6">
-          <Card className="border-2 border-dashed border-orange-200 hover:border-orange-300 transition-colors">
-            <CardHeader className="text-center">
-              <CardTitle className="flex items-center justify-center space-x-2">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center space-x-2">
                 <Upload className="h-6 w-6 text-orange-600" />
                 <span>Upload New Past Papers</span>
               </CardTitle>
               <CardDescription>
-                Drag and drop your past exam papers here, or click to browse
+                Upload your past exam papers to get AI-powered analysis and personalized study plans
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-center">
-              <Button 
-                onClick={handleFileUpload}
-                disabled={isUploading}
-                className="bg-orange-600 hover:bg-orange-700"
-              >
-                {isUploading ? (
-                  <>
-                    <Upload className="mr-2 h-4 w-4 animate-spin" />
-                    Uploading...
-                  </>
-                ) : (
-                  <>
-                    <Plus className="mr-2 h-4 w-4" />
-                    Choose Files
-                  </>
-                )}
-              </Button>
-              <p className="text-sm text-gray-500 mt-2">
-                Supports PDF, DOCX, and TXT files
-              </p>
+            <CardContent>
+              <FileUpload onFileUpload={handleFileUpload} />
             </CardContent>
           </Card>
 
