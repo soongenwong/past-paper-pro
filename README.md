@@ -1,5 +1,17 @@
 # Evolve AI Study Partner
 
+<div align="center">
+  <img src="./.github/assets/hero-image.png" alt="Evolve AI Study Partner - AI-Powered Learning Platform" width="100%" style="border-radius: 10px; margin-bottom: 20px;" />
+  
+  <p><em>Transform your exam preparation with AI-powered insights and personalized learning</em></p>
+</div>
+
+<div align="center">
+  <img src="./.github/assets/dashboard.png" alt="Dashboard" width="100%" style="border-radius: 10px; margin-bottom: 20px;" />
+  
+  <p><em>Transform your exam preparation with AI-powered insights and personalized learning</em></p>
+</div>
+
 An AI-powered study platform that transforms past exam papers into personalized learning experiences. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ![Evolve AI Study Partner](https://img.shields.io/badge/Next.js-15-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3-38B2AC) ![React](https://img.shields.io/badge/React-18-61DAFB)
