@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { FileUpload } from "@/components/ui/file-upload";
 import { 
   Upload, 
@@ -11,8 +9,7 @@ import {
   TrendingUp, 
   Clock, 
   BookOpen,
-  BarChart3,
-  Plus
+  BarChart3
 } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts";
 
@@ -55,9 +52,9 @@ const recentActivity = [
 ];
 
 const todaysFocus = [
-  "Review 'Thermodynamics' concepts - 30 mins",
-  "Practice 'Organic Chemistry' questions - 45 mins",
-  "Complete 'Calculus' problem set - 1 hour",
+  "Review &apos;Thermodynamics&apos; concepts - 30 mins",
+  "Practice &apos;Organic Chemistry&apos; questions - 45 mins",
+  "Complete &apos;Calculus&apos; problem set - 1 hour",
 ];
 
 export default function DashboardPage() {
@@ -72,7 +69,7 @@ export default function DashboardPage() {
       {/* Welcome Header */}
       <div>
         <h1 className="text-3xl font-bold text-gray-900">Welcome back, Sarah!</h1>
-        <p className="text-gray-600 mt-2">Ready to continue your study journey? Let's make today count.</p>
+        <p className="text-gray-600 mt-2">Ready to continue your study journey? Let&apos;s make today count.</p>
       </div>
 
       {/* Stats Overview */}

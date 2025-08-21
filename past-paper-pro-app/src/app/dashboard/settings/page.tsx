@@ -116,7 +116,7 @@ export default function SettingsPage() {
                 <span>Notifications</span>
               </CardTitle>
               <CardDescription>
-                Choose what notifications you'd like to receive
+                Choose what notifications you&apos;d like to receive
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -124,7 +124,7 @@ export default function SettingsPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-medium">Study Reminders</h4>
-                    <p className="text-sm text-gray-600">Get reminded when it's time to study</p>
+                    <p className="text-sm text-gray-600">Get reminded when it&apos;s time to study</p>
                   </div>
                   <input
                     type="checkbox"

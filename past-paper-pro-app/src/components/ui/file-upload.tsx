@@ -25,7 +25,7 @@ export function FileUpload({
   const [uploadProgress, setUploadProgress] = useState(0);
   const [errors, setErrors] = useState<string[]>([]);
 
-  const validateFile = (file: File): string | null => {
+  const validateFile = useCallback((file: File): string | null => {
     // Check file type
     const fileExtension = '.' + file.name.split('.').pop()?.toLowerCase();
     if (!acceptedFileTypes.includes(fileExtension)) {
@@ -39,7 +39,7 @@ export function FileUpload({
     }
 
     return null;
-  };
+  }, [acceptedFileTypes, maxFileSizeMB]);
 
   const handleFiles = useCallback((fileList: FileList) => {
     const newErrors: string[] = [];
@@ -60,7 +60,7 @@ export function FileUpload({
     if (validFiles.length > 0) {
       setFiles(prev => [...prev, ...validFiles]);
     }
-  }, [files.length, maxFiles, maxFileSizeMB, acceptedFileTypes]);
+  }, [files.length, maxFiles, validateFile]);
 
   const handleDrag = useCallback((e: React.DragEvent) => {
     e.preventDefault();

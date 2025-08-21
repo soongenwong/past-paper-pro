@@ -226,7 +226,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                  "Evolve AI completely changed how I study. The personalized quizzes helped me identify my weak spots and the AI analysis revealed patterns I never noticed. My grades improved by 25%!"
+                  &ldquo;Evolve AI completely changed how I study. The personalized quizzes helped me identify my weak spots and the AI analysis revealed patterns I never noticed. My grades improved by 25%!&rdquo;
                 </p>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -248,7 +248,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                  "The AI-powered study plans are incredible. Instead of randomly studying topics, I now follow a strategic path tailored to my learning style. Passed my engineering exams with flying colors!"
+                  &ldquo;The AI-powered study plans are incredible. Instead of randomly studying topics, I now follow a strategic path tailored to my learning style. Passed my engineering exams with flying colors!&rdquo;
                 </p>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold">
@@ -270,7 +270,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                  "I was struggling with chemistry until I found Evolve AI. The trend analysis showed me exactly which topics appear most frequently in exams. Now I study smarter, not harder!"
+                  &ldquo;I was struggling with chemistry until I found Evolve AI. The trend analysis showed me exactly which topics appear most frequently in exams. Now I study smarter, not harder!&rdquo;
                 </p>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold">

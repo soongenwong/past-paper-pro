@@ -7,8 +7,7 @@ import {
   Target, 
   Clock, 
   Award,
-  Calendar,
-  BookOpen
+  Calendar
 } from "lucide-react";
 import { 
   LineChart, 
