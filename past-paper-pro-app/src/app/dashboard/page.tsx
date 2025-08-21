@@ -160,7 +160,7 @@ export default function DashboardPage() {
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <Clock className="h-5 w-5 text-orange-600" />
-                <span>Today's Focus</span>
+                <span>Today&apos;s Focus</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
